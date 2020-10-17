@@ -202,11 +202,105 @@ a:hover {
 }
 .bodyText P {
     font-size: 2vw;
-
 }
 
+/* work Style */
 
+.heroImageWork {
+    background-color: #D3B7CC;
+    width: 100%;
+    height: 30vh;
+    font-family: "Fredericka the Great";
+    color: #E2E2EE;
+    text-align: center;
+    font-size: 9vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.bodyContentWork {
+    background-color: #263D23;
+    width: 100%; 
+    display: grid;
+    color: white;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "nemaa nemaa1"
+    "project project1"
+    
+}
+.nemaa {
+    font-size: 3vw;
+    grid-area: nemaa;
+    margin: 10%;
+    text-align: relative;
+    
 
+}
+/* NEMAA image */
+.container {
+    position: relative;
+    width: 50%;
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: 10%;
+}
+  
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+    right: 0;
+    background-color:#D3B7CC;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+  
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+  
+.text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 2vw;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.nemaa1 {
+    grid-area: nemaa1;
+    font-size: 2vw;
+    margin: 10%;
+    text-align: right;
+}
+
+.project{ 
+    grid-area: project;
+    font-size: 2vw;
+    margin: 10%;
+    text-align: left;
+}
+.project1 {
+    grid-area: project1;
+    font-size: 2vw;
+    margin: 10%;
+    text-align: right;
+
+}
 
 
 
